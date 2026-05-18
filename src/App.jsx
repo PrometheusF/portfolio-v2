@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./App.css";
 
+const cvPath = `${import.meta.env.BASE_URL}Deniz_Utku_Celebi_CV.pdf`;
+
 const featuredProject = {
   title: "Smart Home IoT System",
   category: "Cloud / IoT",
@@ -99,7 +101,7 @@ function App() {
           >
             GitHub
           </a>
-          <a className="button secondary" href="/Deniz_Utku_Celebi_CV.pdf" download>
+          <a className="button secondary" href={cvPath} download>
             Download CV
           </a>
         </div>
@@ -200,7 +202,7 @@ function App() {
           </p>
         </div>
 
-        <a className="button primary" href="/Deniz_Utku_Celebi_CV.pdf" download>
+        <a className="button primary" href={cvPath} download>
           Download CV
         </a>
       </section>
