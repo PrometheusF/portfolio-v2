@@ -1,0 +1,313 @@
+.page {
+  min-height: 100vh;
+  background: #f8fafc;
+  color: #0f172a;
+  padding: 28px max(20px, calc((100% - 1120px) / 2)) 36px;
+  transition: 0.2s ease;
+}
+
+.dark {
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.navbar h2 {
+  font-size: 20px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.navbar a {
+  color: #475569;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.dark .navbar a {
+  color: #cbd5e1;
+}
+
+.navbar a:hover {
+  color: #2563eb;
+}
+
+.theme-toggle {
+  border: 1px solid #cbd5e1;
+  background: transparent;
+  color: inherit;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hero {
+  max-width: 820px;
+  margin-bottom: 90px;
+}
+
+.eyebrow {
+  color: #2563eb;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.hero h1 {
+  font-size: clamp(42px, 7vw, 72px);
+  line-height: 1;
+  letter-spacing: -0.05em;
+  margin-bottom: 24px;
+}
+
+.hero-text,
+.about-card p,
+.resume p,
+.project-card p,
+.featured-card p,
+.contact p {
+  color: #475569;
+  line-height: 1.7;
+}
+
+.dark .hero-text,
+.dark .about-card p,
+.dark .resume p,
+.dark .project-card p,
+.dark .featured-card p,
+.dark .contact p {
+  color: #cbd5e1;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 32px;
+}
+
+.button {
+  display: inline-flex;
+  padding: 12px 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.primary {
+  background: #2563eb;
+  color: white;
+}
+
+.secondary {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.dark .secondary {
+  background: #1e293b;
+  color: white;
+}
+
+.section {
+  margin-top: 70px;
+}
+
+.section-heading {
+  margin-bottom: 24px;
+}
+
+.projects-heading {
+  margin-top: 48px;
+}
+
+.section-heading h2,
+.contact h2,
+.resume h2 {
+  font-size: 34px;
+  letter-spacing: -0.03em;
+}
+
+.about-card,
+.resume,
+.featured-card,
+.project-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+}
+
+.dark .about-card,
+.dark .resume,
+.dark .featured-card,
+.dark .project-card {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+.about-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  padding: 28px;
+}
+
+.featured-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 28px;
+}
+
+.featured-card h3 {
+  font-size: 28px;
+  margin: 10px 0 12px;
+}
+
+.featured-card a,
+.project-card a {
+  color: #2563eb;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.category {
+  display: inline-flex;
+  color: #2563eb;
+  font-weight: 800;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.project-card {
+  padding: 24px;
+  min-height: 260px;
+}
+
+.project-card h3 {
+  font-size: 21px;
+  margin-bottom: 12px;
+}
+
+.tags,
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.tags span,
+.skills-list span {
+  background: #eff6ff;
+  color: #1d4ed8;
+  padding: 7px 10px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.dark .tags span,
+.dark .skills-list span {
+  background: #172554;
+  color: #bfdbfe;
+}
+
+.skills-list span {
+  background: white;
+  border: 1px solid #e2e8f0;
+  color: #334155;
+}
+
+.dark .skills-list span {
+  border-color: #334155;
+}
+
+.resume {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  padding: 28px;
+}
+
+.resume p {
+  max-width: 680px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  background: #0f172a;
+  color: white;
+  border-radius: 22px;
+  padding: 32px;
+}
+
+.dark .contact {
+  background: #1e293b;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 260px;
+}
+
+.contact-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.footer {
+  margin-top: 34px;
+  color: #64748b;
+  font-size: 14px;
+  text-align: center;
+}
+
+@media (max-width: 850px) {
+  .navbar,
+  .contact,
+  .resume,
+  .featured-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+  }
+
+  .about-card,
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    margin-bottom: 60px;
+  }
+}
