@@ -2,6 +2,8 @@ import { useState } from "react";
 import "./App.css";
 
 const cvPath = `${import.meta.env.BASE_URL}Deniz_Utku_Celebi_CV.pdf`;
+const linkedinUrl = "https://www.linkedin.com/in/deniz-utku-celebi/";
+const githubUrl = "https://github.com/PrometheusF";
 
 const featuredProject = {
   title: "Smart Home IoT System",
@@ -95,7 +97,7 @@ function App() {
           </a>
           <a
             className="button secondary"
-            href="https://github.com/PrometheusF"
+            href={githubUrl}
             target="_blank"
             rel="noreferrer"
           >
@@ -221,18 +223,10 @@ function App() {
           <a href="mailto:denizutkucelebi204@gmail.com">
             denizutkucelebi204@gmail.com
           </a>
-          <a
-            href="https://www.linkedin.com/in/deniz-utku-celebi-504430231"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href={linkedinUrl} target="_blank" rel="noreferrer">
             LinkedIn
           </a>
-          <a
-            href="https://github.com/PrometheusF"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href={githubUrl} target="_blank" rel="noreferrer">
             GitHub
           </a>
         </div>
