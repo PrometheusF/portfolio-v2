@@ -16,10 +16,18 @@ const featuredProject = {
 
 const projects = [
   {
+    title: "Job Application Tracker",
+    category: "Desktop App / Database",
+    description:
+      "Desktop application for tracking job applications with CRUD operations, search, status filtering, dashboard summary cards, and local SQLite storage.",
+    tech: ["C#", "WPF", "SQLite", "MVVM"],
+    github: "https://github.com/PrometheusF/JobApplicationTracker",
+  },
+  {
     title: "To-Do List WPF Desktop App",
     category: "Desktop App",
     description:
-      "Task management desktop app with MVVM structure, search, filters, status tracking, and JSON local storage.",
+      "Desktop task manager built with C#, WPF, MVVM, search, filters, and JSON local storage.",
     tech: ["C#", "WPF", "MVVM", "JSON"],
     github: "https://github.com/PrometheusF/TodoListWpfApp",
   },
